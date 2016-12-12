@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.master.ahlalhdeeth.MyCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="احصائيـــات المنتدى"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:background="@color/bulgarian_blue"
+        android:textColor="@color/whitesmoke"
+        android:textSize="15dp"
+        android:gravity="center_vertical|center_horizontal"/>
+        <!--android:layout_marginRight="-5dp"-->
+
+    <com.example.master.ahlalhdeeth.MyCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="المواضيع: 319,969, المشاركات: 1,990,372, الأعضاء: 103,173
+نرحب بالعضو الجديد, ابوعصام وعلا"
+        android:id="@+id/footertextView"
+        android:layout_alignParentTop="false"
+        android:textSize="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingStart="20dp"
+        android:layout_below="@+id/textView6"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/footertextView"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:background="@color/bulgarian_blue"
+        android:layout_marginTop="3dp"/>
+        <!--android:layout_marginRight="-5dp"-->
+</RelativeLayout>

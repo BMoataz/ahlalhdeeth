@@ -1,0 +1,54 @@
+<resources>
+    <string name="title_activity_settings">إعدادات التطبيق</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <string name="pref_title_social_recommendations">تمكين محتوى HTML</string>
+    <string name="pref_description_social_recommendations">بتفعيلك لهذه الخاصية سوف تتمكن من تحميل محتوى الموقع بالألوان والضغط على الروابط والصور وغيره من ميزات html</string>
+
+    <string name="pref_font_changing">استخدام خط التطبيق</string>
+
+    <string name="pref_title_add_friends_to_messages">حجم الخط</string>
+    <string-array name="pref_example_list_titles">
+        <item>صغير</item>
+        <item>كبير</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">إعدادات التزامن</string>
+
+    <string name="pref_title_sync_frequency">مدة التزامن</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 دقيقة</item>
+        <item>30 دقيقة</item>
+        <item>ساعة واحدة</item>
+        <item>3 ساعات</item>
+        <item>6 ساعات</item>
+        <item>تعطيل</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">الإشعارات</string>
+
+    <string name="pref_title_new_message_notifications">مشاركات جديدة</string>
+
+    <string name="pref_title_ringtone">نغمة الإشعار</string>
+    <string name="pref_ringtone_silent">صامت</string>
+
+    <string name="pref_title_vibrate">الهزاز</string>
+</resources>

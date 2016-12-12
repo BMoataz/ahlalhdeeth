@@ -1,0 +1,52 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+    android:id="@+id/ptr_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+
+<!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".DetailActivity$DetailFragment">-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_forecast_detail"
+        android:divider="@android:color/transparent"
+        android:stackFromBottom="false"
+        android:listSelector="@color/bulgarian_blue"
+        android:fastScrollEnabled="true"
+        android:longClickable="true"
+        android:fastScrollAlwaysVisible="true"
+        android:verticalScrollbarPosition="left"
+        android:scrollbarStyle="outsideInset"
+        />
+
+<!--</FrameLayout>-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp">-->
+
+    <!--</ScrollView>-->
+</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

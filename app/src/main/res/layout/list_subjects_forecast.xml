@@ -60,21 +60,20 @@
             android:src="@drawable/online_status" />
 
         <FrameLayout
+            android:visibility="gone"
             android:id="@+id/layout_quotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
             android:layout_margin="20dp"
-            android:visibility="gone">
+            android:background="#E1E4F2">
 
             <com.example.master.ahlalhdeeth.MyCustomTextView
                 android:id="@+id/txt_quotes"
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#E1E4F2"
-                android:gravity="center"
-                android:padding="10.0dp"
-                android:text="المشاركة الاصلية تمت بواسطة أم هاجر الواسطية"
+                android:layout_marginTop="5dp"
                 android:textIsSelectable="true"
                 android:textSize="14sp" />
         </FrameLayout>

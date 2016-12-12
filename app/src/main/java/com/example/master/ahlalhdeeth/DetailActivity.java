@@ -16,9 +16,8 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
-import com.example.master.ahlalhdeeth.fragment.DetailFragment;
-//import com.ikimuhendis.ldrawer.ActionBarDrawerToggle;
-//import com.ikimuhendis.ldrawer.DrawerArrowDrawable;
+import com.example.master.ahlalhdeeth.fragment.SubjectsFragment;
+import com.example.master.ahlalhdeeth.fragment.TitlesFragment;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -39,7 +38,7 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new DetailFragment())
+                    .add(R.id.container, new SubjectsFragment())
                     .commit();
         }
 
@@ -53,12 +52,6 @@ public class DetailActivity extends AppCompatActivity {
         mDrawerList = (ListView) findViewById(R.id.navdrawer);
         mLinearLayout = (LinearLayout) findViewById(R.id.drawercontainer);
 
-//        drawerArrow = new DrawerArrowDrawable(this) {
-//            @Override
-//            public boolean isLayoutRtl() {
-//                return false;
-//            }
-//        };
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close) {
 
             public void onDrawerClosed(View view) {
@@ -75,10 +68,9 @@ public class DetailActivity extends AppCompatActivity {
         mDrawerToggle.syncState();
 
 
-        String[] Titles = getIntent().getStringArrayExtra("alltitles");
-//        final String[] Links = getIntent().getStringArrayExtra("alllinks");
+        String[] Titles = getIntent().getStringArrayExtra(TitlesFragment.ALL_TITLES);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, Titles);
         mDrawerList.setAdapter(adapter);
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -89,7 +81,6 @@ public class DetailActivity extends AppCompatActivity {
                 OpenActivityDrawerIntent.putExtra("position", position);
                 startActivity(OpenActivityDrawerIntent);
                 mDrawerLayout.closeDrawer(mLinearLayout);
-//                finish();
             }
         });
     }
@@ -100,11 +91,6 @@ public class DetailActivity extends AppCompatActivity {
 
         int id = item.getItemId();
         if (id == android.R.id.home) {
-//            if (mDrawerLayout.isDrawerOpen(mDrawerList)) {
-//                mDrawerLayout.closeDrawer(mDrawerList);
-//            } else {
-//                mDrawerLayout.openDrawer(mDrawerList);
-//            }
             if (mDrawerLayout.isDrawerOpen(mLinearLayout)) {
                 mDrawerLayout.closeDrawer(mLinearLayout);
             } else {
@@ -133,7 +119,6 @@ public class DetailActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }

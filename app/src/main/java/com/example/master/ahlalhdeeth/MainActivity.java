@@ -21,7 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.master.ahlalhdeeth.fragment.MainFragment;
+import com.example.master.ahlalhdeeth.fragment.TitlesFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new MainFragment())
+                    .add(R.id.container, new TitlesFragment())
                     .commit();
         }
         ActionBar ab = getSupportActionBar();

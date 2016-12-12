@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 
-import com.example.master.ahlalhdeeth.fragment.RDFragment;
+import com.example.master.ahlalhdeeth.fragment.ReadPostsFragment;
 
 
 public class ReadingSubjects extends AppCompatActivity {
@@ -19,7 +19,7 @@ public class ReadingSubjects extends AppCompatActivity {
         setContentView(R.layout.activity_reading_subjects);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new RDFragment())
+                    .add(R.id.container, new ReadPostsFragment())
                     .commit();
         }
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

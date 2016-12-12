@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="0dp" >
+    app:cardCornerRadius="0dp">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:paddingRight="5dp"
-    android:paddingTop="5dp"
-    android:paddingBottom="5dp">
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:paddingRight="5dp"
-    android:paddingTop="5dp"
-    android:paddingBottom="5dp">
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/footertextView"
-    android:orientation="horizontal"
-    android:id="@+id/secondrelativelayout">
-
-    <com.example.master.ahlalhdeeth.MyCustomTextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-        android:id="@+id/list_item_forecast_textview"
-    android:text="التعليق على تفسير ابن جرير الطبري من المجلس الأول إلى المجلس العاشر"
-        android:layout_marginRight="5dp"
-        android:layout_toLeftOf="@+id/imageView"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="5dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/thread_new"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true" />
-</RelativeLayout>
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
 
-    <com.example.master.ahlalhdeeth.MyCustomTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:text="أبو عبدالله سفيان الثوري"
-        android:id="@+id/footertextView"
-        android:layout_toLeftOf="@+id/textView2"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="13sp"
-        android:singleLine="true"
-        android:drawableRight="@drawable/user77" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
 
-    <com.example.master.ahlalhdeeth.MyCustomTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="435"
-        android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/textView3"
-        android:layout_marginLeft="10dp"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="13sp"
-        android:singleLine="true"
-        android:drawableRight="@drawable/eye50"
-        android:gravity="bottom" />
+            <RelativeLayout
+                android:id="@+id/secondrelativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/footertextView"
+                android:orientation="horizontal">
 
-    <com.example.master.ahlalhdeeth.MyCustomTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:id="@+id/textView3"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="10dp"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="13sp"
-        android:singleLine="true"
-        android:drawableRight="@drawable/font2"/>
+                <com.example.master.ahlalhdeeth.MyCustomTextView
+                    android:id="@+id/list_item_forecast_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/imageView"
+                    android:text="التعليق على تفسير ابن جرير الطبري من المجلس الأول إلى المجلس العاشر"
+                    android:textSize="16.0sp" />
 
-    <com.example.master.ahlalhdeeth.MyCustomTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="02-11-14 02:13 PM"
-        android:id="@+id/textView4"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="13sp"
-        android:singleLine="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="2dp"
-        android:layout_below="@+id/secondrelativelayout"
-        android:drawableRight="@drawable/calendar51"/>
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/thread_new" />
+            </RelativeLayout>
 
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="التعليق على تفسير ابن جرير الطبري من المجلس الأول إلى المجلس العاش"-->
-        <!--android:id="@+id/textView5"-->
-        <!--android:textColor="@android:color/darker_gray"-->
-        <!--android:textSize="13sp"-->
-        <!--android:layout_marginLeft="5dp"-->
-        <!--android:layout_marginTop="5dp"-->
-        <!--android:layout_below="@+id/textView4"-->
-        <!--android:layout_centerHorizontal="true"></TextView>-->
+            <com.example.master.ahlalhdeeth.MyCustomTextView
+                android:id="@+id/footertextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textView2"
+                android:drawableRight="@drawable/user77"
+                android:singleLine="true"
+                android:text="أبو عبدالله سفيان الثوري"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <com.example.master.ahlalhdeeth.MyCustomTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/textView3"
+                android:drawableRight="@drawable/eye50"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="435"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <com.example.master.ahlalhdeeth.MyCustomTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_marginLeft="10dp"
+                android:drawableRight="@drawable/font2"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <com.example.master.ahlalhdeeth.MyCustomTextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondrelativelayout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:drawableRight="@drawable/calendar51"
+                android:singleLine="true"
+                android:text="02-11-14 02:13 PM"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="التعليق على تفسير ابن جرير الطبري من المجلس الأول إلى المجلس العاش"-->
+            <!--android:id="@+id/textView5"-->
+            <!--android:textColor="@android:color/darker_gray"-->
+            <!--android:textSize="13sp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_below="@+id/textView4"-->
+            <!--android:layout_centerHorizontal="true"></TextView>-->
 
 
+        </RelativeLayout>
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageViewSpinned"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible" />
 
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:id="@+id/imageViewSpinned"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:visibility="visible"
-        android:layout_marginLeft="5dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/imageViewSpinned"
+            android:src="@drawable/attach"
+            android:visibility="invisible" />
 
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/attach"
-        android:layout_toRightOf="@+id/imageViewSpinned"
-        android:visibility="invisible"/>
+    </RelativeLayout>
 
-</RelativeLayout>
-
-</android.support.v7.widget.CardView >
+</android.support.v7.widget.CardView>

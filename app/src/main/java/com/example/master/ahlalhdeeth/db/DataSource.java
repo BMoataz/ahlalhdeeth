@@ -10,7 +10,9 @@ import android.util.Log;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by Master on 05/11/2014.
@@ -50,40 +52,40 @@ public class DataSource {
         }
     }
 
-    public String[] FindTitles() {
+    public List<String> findTitles() {
 
-        String[] data = null;
+        List<String> data = new ArrayList<>();
 
         Cursor cursor = database.query(SubjectsDBOpenHelper.TABLE_SUBJECTS, Columns
                 , null, null, null, null, null);
 
         Log.i(LOGTAG, "Have Returned " + cursor.getCount() + " Title");
 
-        if (cursor.getCount() > 0) {
-            int i = 0;
-            data = new String[cursor.getCount()];
-            while (cursor.moveToNext()) {
-                data[i] = cursor.getString(cursor.getColumnIndex(SubjectsDBOpenHelper.COLUMN_TITLE));
-                i++;
+        if (cursor.moveToFirst()) {
+            while (!cursor.isAfterLast()) {
+                data.add(cursor.getString(cursor.getColumnIndex(SubjectsDBOpenHelper.COLUMN_TITLE)));
+                cursor.moveToNext();
             }
         }
+        cursor.close();
+
         return data;
     }
 
-    public String[] FindHrefs() {
-        String[] href = null;
+    public List<String> findLinks() {
+        List<String> href = new ArrayList<>();
 
         Cursor cursor = database.query(SubjectsDBOpenHelper.TABLE_SUBJECTS, Columns
                 , null, null, null, null, null);
         Log.i(LOGTAG, "Have Returned " + cursor.getCount() + " Href");
-        if (cursor.getCount() > 0) {
-            int i = 0;
-            href = new String[cursor.getCount()];
-            while (cursor.moveToNext()) {
-                href[i] = cursor.getString(cursor.getColumnIndex(SubjectsDBOpenHelper.COLUMN_LINK));
-                i++;
+        if (cursor.moveToFirst()) {
+            while (!cursor.isAfterLast()) {
+                href.add(cursor.getString(cursor.getColumnIndex(SubjectsDBOpenHelper.COLUMN_LINK)));
+                cursor.moveToNext();
             }
         }
+        cursor.close();
+
         return href;
     }
 
